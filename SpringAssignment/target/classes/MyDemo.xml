@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="DemoObj" class="com.example.SpringAssignment.model.Demo">
+
+		<property name="id"  value="1"></property>
+		<property name="name"  value="Shraddha"></property>
+		<property name="Skillset">
+		<list>
+		<value>C</value>
+		<value>C++</value>
+		<value>C#</value>
+		<value>JAVA</value>
+		</list>
+		</property>
+		
+		<property name="Projects">
+		<map>
+		<entry key="1" value="Core Java" />
+		<entry key="2" value="Spring core" />
+		<entry key="3" value="Spring Boot" />
+		</map>
+		</property>
+		
+		<property name="phone_nos">
+
+			<set>
+				<value>4512369874</value>
+				<value>7845126874</value>
+				<value>4852639145</value>
+			</set>
+		</property>
+	</bean>
+</beans>
