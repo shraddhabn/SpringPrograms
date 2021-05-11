@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="empObj" class="com.example.model.Employee">
+
+		<property name="empList">
+			<list>
+				<value>Java</value>
+				<value>Java</value>
+				<value>C++</value>
+				<value>C</value>
+				<value>C++</value>
+				<value>C</value>
+				<value>C#</value>
+			</list>
+		</property>
+
+		<property name="empSet">
+
+			<set>
+				<value>Java</value>
+				<value>Java</value>
+				<value>C++</value>
+				<value>C</value>
+				<value>C#</value>
+
+			</set>
+		</property>
+
+		<property name="empMap">
+
+			<map>
+				<entry key="k2" value="v2" />
+
+				<entry key="k3">
+					<value>v3</value>
+				</entry>
+
+				<entry value="v4">
+					<key>
+						<value>k4</value>
+					</key>
+				</entry>
+			</map>
+		</property>
+
+		<property name="empProperties">
+			<props>
+				<prop key="key1">val1	</prop>
+
+				<prop key="key2">val2</prop>
+
+				<prop key="key3">val3</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
